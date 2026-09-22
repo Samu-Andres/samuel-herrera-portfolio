@@ -24,11 +24,11 @@ export const projects: Project[] = [
   {
     slug: "dashboard-gastos",
     name: "Dashboard de Gastos",
-    url: "samu-andres.github.io/dashboard-gastos",
+    url: "dashboard-gastos-steel.vercel.app",
     description:
       "Dashboard familiar de gastos con cifrado E2E, automatizaciones de presupuesto y sincronización en tiempo real.",
     stack: ["React", "Vite", "Tailwind CSS", "Supabase"],
-    demoHref: "https://samu-andres.github.io/dashboard-gastos/",
+    demoHref: "https://dashboard-gastos-steel.vercel.app/",
     repoHref: "https://github.com/Samu-Andres/dashboard-gastos",
     featured: true,
   },
