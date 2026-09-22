@@ -1,0 +1,57 @@
+export type Project = {
+  slug: string;
+  name: string;
+  url: string;
+  description: string;
+  stack: string[];
+  demoHref: string | null;
+  repoHref: string | null;
+  featured: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    slug: "pokedex",
+    name: "Pokedex",
+    url: "samu-pokedex.netlify.app",
+    description:
+      "Pokedex clásica que consume la PokéAPI para buscar Pokémon y ver su ficha detallada: tipos, stats e imagen.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demoHref: "https://samu-pokedex.netlify.app/",
+    repoHref: "https://github.com/Samu-Andres/Pokedex",
+    featured: true,
+  },
+  {
+    slug: "dashboard-gastos",
+    name: "Dashboard de Gastos",
+    url: "samu-andres.github.io/dashboard-gastos",
+    description:
+      "Dashboard familiar de gastos con cifrado E2E, automatizaciones de presupuesto y sincronización en tiempo real.",
+    stack: ["React", "Vite", "Tailwind CSS", "Supabase"],
+    demoHref: "https://samu-andres.github.io/dashboard-gastos/",
+    repoHref: "https://github.com/Samu-Andres/dashboard-gastos",
+    featured: true,
+  },
+  {
+    slug: "ecommerce",
+    name: "E-commerce",
+    url: "próximamente",
+    description:
+      "Tienda online con catálogo de productos, carrito de compras y panel de administración.",
+    stack: ["PHP", "MySQL", "phpMyAdmin", "XAMPP"],
+    demoHref: null,
+    repoHref: null,
+    featured: true,
+  },
+  {
+    slug: "clima",
+    name: "Clima",
+    url: "próximamente",
+    description:
+      "Aplicación del clima que consulta una API meteorológica para mostrar el pronóstico por ciudad.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demoHref: null,
+    repoHref: null,
+    featured: false,
+  },
+];
