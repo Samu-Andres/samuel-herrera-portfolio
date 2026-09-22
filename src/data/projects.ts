@@ -13,11 +13,11 @@ export const projects: Project[] = [
   {
     slug: "pokedex",
     name: "Pokedex",
-    url: "samu-pokedex.netlify.app",
+    url: "pokedex-hesadev.netlify.app",
     description:
       "Pokedex clásica que consume la PokéAPI para buscar Pokémon y ver su ficha detallada: tipos, stats e imagen.",
     stack: ["HTML", "CSS", "JavaScript"],
-    demoHref: "https://samu-pokedex.netlify.app/",
+    demoHref: "https://pokedex-hesadev.netlify.app/",
     repoHref: "https://github.com/Samu-Andres/Pokedex",
     featured: true,
   },
