@@ -46,12 +46,12 @@ export const projects: Project[] = [
   {
     slug: "clima",
     name: "Clima",
-    url: "próximamente",
+    url: "weather-app-hesadev.netlify.app",
     description:
-      "Aplicación del clima que consulta una API meteorológica para mostrar el pronóstico por ciudad.",
+      "Aplicación del clima con pronóstico de 5 días, geolocalización, mapa y gráfico de temperatura por hora, usando la API de OpenWeatherMap.",
     stack: ["HTML", "CSS", "JavaScript"],
-    demoHref: null,
-    repoHref: null,
-    featured: false,
+    demoHref: "https://weather-app-hesadev.netlify.app/",
+    repoHref: "https://github.com/Samu-Andres/Weather-Technical-Interview",
+    featured: true,
   },
 ];
