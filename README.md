@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# samuel.dev — Portfolio personal
 
-## Getting Started
+Portfolio de **Herrera Samuel Andrés (Samu Andrés)** — Técnico Superior en Diseño y Programación Web, Río Gallegos, Santa Cruz, Argentina.
 
-First, run the development server:
+Sitio de una sola página con estética de terminal: ventanas de terminal/browser animadas, texto que se tipea en vivo y un acento violeta sobre fondo oscuro.
+
+🔗 Demo en vivo: https://samuel-herrera-portfolio.vercel.app/
+
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- [React](https://react.dev) + TypeScript
+- [Tailwind CSS](https://tailwindcss.com)
+- [Framer Motion](https://www.framer.com/motion/) para las animaciones
+- Fuentes: Space Grotesk (headings) y JetBrains Mono (terminal)
+
+## Secciones
+
+- **Hero** — terminal animada con `whoami` / `cat rol.txt`
+- **Sobre mí** — bio, stack de tecnologías y link al CV
+- **Proyectos** — cards estilo ventana de navegador, con demo y repo
+- **Certificados** — cursos y certificaciones
+- **Contacto** — email, GitHub, LinkedIn y redes
+
+## Correr en local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Otros scripts disponibles: `npm run build`, `npm run start`, `npm run lint`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editar contenido
 
-## Learn More
+No hace falta tocar los componentes para actualizar el contenido del día a día:
 
-To learn more about Next.js, take a look at the following resources:
+- `src/data/projects.ts` — proyectos mostrados en la sección Proyectos
+- `src/data/certificates.ts` — certificados y cursos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Los componentes visuales están en `src/components/`, y las páginas en `src/app/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+Deployado en [Vercel](https://vercel.com): importar el repo, Vercel detecta Next.js automáticamente y no requiere variables de entorno.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contacto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: hsamuel638@gmail.com
+- GitHub: [github.com/Samu-Andres](https://github.com/Samu-Andres)
+- LinkedIn: [linkedin.com/in/samuel-a-herrera](https://www.linkedin.com/in/samuel-a-herrera)
+- Redes: [linktr.ee/samuel.herrera](https://linktr.ee/samuel.herrera)
