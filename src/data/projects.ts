@@ -44,6 +44,17 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "turnos-peluqueria",
+    name: "Turnos Peluquería",
+    url: "turnos-peluqueria-dusky.vercel.app",
+    description:
+      "Plataforma de reservas para peluquerías y barberías: los clientes reservan sin necesitar cuenta, y el dueño administra servicios, staff, horarios y turnos desde un panel propio.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    demoHref: "https://turnos-peluqueria-dusky.vercel.app/",
+    repoHref: "https://github.com/Samu-Andres/turnos-peluqueria",
+    featured: true,
+  },
+  {
     slug: "clima",
     name: "Clima",
     url: "weather-app-hesadev.netlify.app",
