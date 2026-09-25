@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 pb-16"
+      className="relative flex min-h-svh flex-col items-center justify-center px-6 pt-24 pb-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-accent/10 via-transparent to-background" />
 
@@ -66,12 +66,7 @@ export function Hero() {
         className="absolute bottom-8 flex flex-col items-center gap-2 text-xs text-muted"
       >
         <span>scroll</span>
-        <motion.span
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-        >
-          ↓
-        </motion.span>
+        <span className="animate-nudge">↓</span>
       </motion.div>
     </section>
   );

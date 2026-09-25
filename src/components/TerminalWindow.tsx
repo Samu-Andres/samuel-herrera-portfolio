@@ -11,7 +11,7 @@ export function TerminalWindow({
 }) {
   return (
     <div
-      className={`rounded-lg border border-border bg-surface/80 shadow-[0_0_40px_-15px_rgba(109,40,217,0.4)] backdrop-blur-sm overflow-hidden ${className}`}
+      className={`rounded-lg border border-border bg-surface/95 shadow-[0_0_40px_-15px_rgba(109,40,217,0.4)] overflow-hidden ${className}`}
     >
       <div className="flex items-center gap-2 border-b border-border bg-white/[0.03] px-4 py-2.5">
         <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />

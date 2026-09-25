@@ -84,7 +84,7 @@ export function About() {
                 solidez del código detrás de escena.
               </p>
               <div className="pt-2">
-                <p className="mb-3 text-xs text-muted">// stack</p>
+                <p className="mb-3 text-xs text-muted">{"// stack"}</p>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill) => (
                     <span

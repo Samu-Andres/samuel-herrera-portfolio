@@ -21,13 +21,11 @@ export function TypingLines({
 }) {
   const [lineIndex, setLineIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-  const [done, setDone] = useState(false);
+  // Terminó de tipear cuando ya se pasó la última línea (se deriva, no hace falta otro estado).
+  const done = lineIndex >= lines.length;
 
   useEffect(() => {
-    if (lineIndex >= lines.length) {
-      setDone(true);
-      return;
-    }
+    if (lineIndex >= lines.length) return;
 
     const current = lines[lineIndex];
     const isLineComplete = charIndex >= current.text.length;

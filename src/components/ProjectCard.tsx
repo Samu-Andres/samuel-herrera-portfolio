@@ -12,7 +12,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
       whileHover={{ y: -6 }}
-      className="group"
+      className="group min-w-0"
     >
       <BrowserWindow
         url={project.url}

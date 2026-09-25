@@ -30,6 +30,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Red de seguridad: nada puede generar scroll horizontal en el celu. */
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -38,6 +44,18 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 42px 42px;
   background-position: center top;
+}
+
+/* En celulares (pantallas OLED de alta densidad) las líneas al 5% casi no
+   se ven: se refuerzan un poco para que la cuadrícula se note igual que en
+   la compu. */
+@media (max-width: 767px) {
+  body {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
 }
 
 ::selection {
@@ -75,6 +93,29 @@ body {
 
 .animate-blink {
   animation: blink 1s step-end infinite;
+}
+
+/* Flecha de "scroll": animación en CSS (la resuelve la GPU, sin JS por frame). */
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.animate-nudge {
+  display: inline-block;
+  animation: nudge 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-nudge,
+  .animate-blink {
+    animation: none;
+  }
 }
 
 .text-glow {
