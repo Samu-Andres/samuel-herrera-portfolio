@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
-  const featured = projects.filter((project) => project.featured);
+  const featured = projects.filter((project) => project.featured).slice(0, 3);
 
   return (
     <section id="proyectos" className="relative px-6 py-24 sm:py-32">
