@@ -49,11 +49,15 @@ export function Contact() {
                   href={link.href}
                   target={link.label !== "email" ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-md border border-transparent px-3 py-2.5 text-sm transition-all hover:border-accent/40 hover:bg-accent/10 hover:pl-4"
+                  className="flex items-baseline gap-3 rounded-md border border-transparent px-3 py-2.5 text-sm transition-all hover:border-accent/40 hover:bg-accent/10 hover:pl-4"
                 >
-                  <span className="text-accent-light">$</span>
-                  <span className="text-muted">{link.label}:</span>
-                  <span className="text-foreground/90">{link.value}</span>
+                  <span className="shrink-0 text-accent-light">$</span>
+                  <span className="flex min-w-0 flex-wrap gap-x-3 gap-y-0.5">
+                    <span className="text-muted">{link.label}:</span>
+                    <span className="min-w-0 text-foreground/90 [overflow-wrap:anywhere]">
+                      {link.value}
+                    </span>
+                  </span>
                 </a>
               ))}
             </div>
