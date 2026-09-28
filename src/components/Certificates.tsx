@@ -34,7 +34,7 @@ export function Certificates() {
                 const content = (
                   <div className="flex items-center justify-between gap-4 py-3.5">
                     <div className="min-w-0">
-                      <p className="truncate text-sm font-medium text-foreground/90 sm:text-base">
+                      <p className="text-sm font-medium text-foreground/90 sm:text-base">
                         {cert.title}
                       </p>
                       <p className="mt-1 text-xs text-muted">{cert.institution}</p>
